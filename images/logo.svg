@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="g" x1="8" y1="4" x2="72" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0deb0"/>
+      <stop offset=".55" stop-color="#c8a35a"/>
+      <stop offset="1" stop-color="#9c7b3c"/>
+    </linearGradient>
+  </defs>
+  <!-- emerald-cut outline (outer + inner step) -->
+  <polygon points="22,3 58,3 77,22 77,58 58,77 22,77 3,58 3,22" stroke="url(#g)" stroke-width="2"/>
+  <polygon points="24,10 56,10 70,24 70,56 56,70 24,70 10,56 10,24" stroke="url(#g)" stroke-width="1" opacity=".6"/>
+  <!-- E -->
+  <path d="M38 27H24V53H38M24 40H35" stroke="url(#g)" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- B -->
+  <path d="M44 27V53M44 27H51A6.5 6.5 0 0 1 51 40H44M51 40A6.5 6.5 0 0 1 51 53H44" stroke="url(#g)" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
