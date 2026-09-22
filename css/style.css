@@ -54,7 +54,7 @@ p { margin: 0; }
 
 .section { padding: 7.5rem 0; position: relative; }
 .section-title { font-size: clamp(2.2rem, 4.6vw, 3.8rem); }
-.lead-muted { color: var(--muted); max-width: 34rem; }
+.lead-muted { color: rgba(242, 237, 228, 0.75); max-width: 34rem; }
 
 /* emerald-cut corners: the one shape motif of the site */
 .cut {
@@ -121,9 +121,9 @@ p { margin: 0; }
   -webkit-backdrop-filter: blur(14px);
   border-bottom-color: var(--line);
 }
-.navbar-brand { display: flex; align-items: center; gap: .8rem; color: var(--ivory); padding: 0; }
+.navbar-brand { display: flex; align-items: center; color: var(--ivory); padding: 0; flex-shrink: 0; }
 .navbar-brand:hover { color: var(--ivory); }
-.navbar-brand img { height: 60px; width: auto; object-fit: contain; }
+.navbar-brand img { height: 60px; width: auto; object-fit: contain; max-width: none; }
 .brand-text { font-family: var(--display); font-size: 1.45rem; letter-spacing: .12em; font-weight: 400; }
 .brand-text small { display: block; font-family: var(--body); font-size: .62rem; letter-spacing: .34em; color: var(--gold); font-weight: 400; margin-top: -.15rem; }
 
@@ -225,7 +225,7 @@ p { margin: 0; }
 .scroll-fill .w {
   display: inline-block;
   --p: 0;
-  background: linear-gradient(90deg, var(--gold-hi) calc(var(--p) * 100%), rgba(242, 237, 228, .15) calc(var(--p) * 100%));
+  background: linear-gradient(90deg, var(--gold-hi) calc(var(--p) * 100%), rgba(242, 237, 228, .4) calc(var(--p) * 100%));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -444,6 +444,7 @@ p { margin: 0; }
 
 .booking-card { --c: 28px; position: relative; padding: 2px; background: linear-gradient(140deg, var(--gold-hi), var(--gold-lo) 45%, var(--gold)); }
 .booking-inner { --c: 27px; background: #050505; padding: 2.6rem 2.2rem; min-height: 620px; clip-path: polygon(27px 0, calc(100% - 27px) 0, 100% 27px, 100% calc(100% - 27px), calc(100% - 27px) 100%, 27px 100%, 0 calc(100% - 27px), 0 27px); }
+@media (max-width: 991px) { .booking-inner { padding: 1.6rem 1rem; } }
 .booking-inner h2 { font-size: 2rem; margin-bottom: .4rem; }
 .booking-inner > p { color: var(--muted); margin-bottom: 1.6rem; }
 .booking-placeholder { border: 1px dashed var(--line); padding: 3rem 1.6rem; text-align: center; color: var(--muted); }
